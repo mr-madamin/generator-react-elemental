@@ -2,7 +2,7 @@
   "name": "generator-react-elemental",
   "version": "0.1.0",
   "description": "Basic React boilerplate ready for use in development and production",
-  "repository": "",
+  "repository": "https://github.com/mr-madamin/generator-react-elemental",
   "keywords": [
     "yeoman-generator",
     "react",
