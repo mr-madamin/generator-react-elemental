@@ -1,5 +1,5 @@
 {
-  "name": "templates",
+  "name": "<%= name %>",
   "version": "0.1.0",
   "scripts": {
     "start": "node scripts/start.js",

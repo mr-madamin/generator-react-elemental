@@ -18,7 +18,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'name',
         message: 'Your app name',
-        default: kebabCase(this.appname),
+        default: kebabCase(this.appname)
       },
     ];
 
