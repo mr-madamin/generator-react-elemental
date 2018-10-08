@@ -1,5 +1,5 @@
 /**
- * @file        Yeoman generator main file of React Essential
+ * @file        Yeoman generator main file of React Elemental
  * @author      Daler Madaminov
  * @license     MIT
  */
@@ -11,7 +11,7 @@ const kebabCase = require('lodash.kebabcase');
 
 module.exports = class extends Generator {
   prompting() {
-    this.log(yosay(`Welcome to the ${chalk.green('React Essential')} Generator!`));
+    this.log(yosay(`Welcome to the ${chalk.green('React Elemental')} Generator!`));
 
     const prompts = [
       {
