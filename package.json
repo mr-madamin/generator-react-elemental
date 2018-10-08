@@ -1,6 +1,6 @@
 {
   "name": "generator-react-elemental",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Basic React boilerplate ready for use in development and production",
   "repository": "https://github.com/mr-madamin/generator-react-elemental",
   "keywords": [
