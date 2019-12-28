@@ -1,6 +1,6 @@
 'use strict';
 
-const autoprefixer = require('autoprefixer');
+const postcssNormalize = require('postcss-normalize');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const paths = require('./paths');
@@ -56,18 +56,18 @@ module.exports = (mode) => {
             {
               loader: require.resolve('postcss-loader'),
               options: {
+                // Necessary for external CSS imports to work
+                // https://github.com/facebook/create-react-app/issues/2677
                 ident: 'postcss',
                 plugins: () => [
                   require('postcss-flexbugs-fixes'),
-                  autoprefixer({
-                    browsers: [
-                      '>1%',
-                      'last 4 versions',
-                      'Firefox ESR',
-                      'not ie < 11',
-                    ],
-                    flexbox: 'no-2009',
+                  require('postcss-preset-env')({
+                    autoprefixer: {
+                      flexbox: 'no-2009',
+                    },
+                    stage: 3,
                   }),
+                  postcssNormalize({ forceImport: 'sanitize.css' }),
                 ],
               },
             },
